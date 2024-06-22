@@ -1,0 +1,75 @@
+/**
+* Template Name: Hudson
+* Updated: Jun 22 2024 with Bootstrap v5.3.3
+* Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+*/
+
+/* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
+:root { 
+    --background-color: #ffffff; /* Background color for the entire website, including individual sections */
+    --default-color: #3B3B3B; /* Default color used for the majority of the text content across the entire website */
+    --heading-color: #2d465e; /* Color for headings, subheadings and title throughout the website */
+    --accent-color: #34bf49; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+    --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
+    --primary-section-color: #3B3B3B; /* This is for primary background-color */
+    --footer-color: #CC2027; /* This is for footer color */
+    --global-white:#ffffff;
+  }
+
+/* Smooth scroll */
+:root {
+    scroll-behavior: smooth;
+  }
+
+.header {
+  color: var(--default-color);
+  background-color: var(--background-color);
+  padding: 20px 0;
+  transition: all 0.5s;
+  z-index: 997;
+}
+.footer-bg {
+  background-color: var(--footer-color);
+}
+.footer {
+  padding: 40px 0px;
+}
+.footer-menu ul, .footer-list-menu ul{
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.footer-menu ul li a, .footer-list-menu ul li a {
+  text-decoration: none;
+  padding: 10px 20px;
+  color: white;
+}
+.footer-list-menu ul li {
+  line-height: 1em;
+  border-right: 1px solid white;
+}
+.footer-list-menu ul li:last-child {
+  border-right: 0px solid white;
+}
+.px-line {
+  padding: 20px 10px 10px 25px;
+}
+.line {
+  border-bottom: 1px solid white;
+}
+.copyright-section{
+  padding: 30px 0;
+}
+.copyright-section h6{
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--global-white);
+}
+@media (min-width: 1880px){
+  .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    max-width: 1720px !important;
+  }
+}
