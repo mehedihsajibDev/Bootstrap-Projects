@@ -12,15 +12,31 @@
     --accent-color: #34bf49; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
     --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
     --primary-section-color: #3B3B3B; /* This is for primary background-color */
-    --footer-color: #CC2027; /* This is for footer color */
     --global-white:#ffffff;
-  }
+    --red:#CC2027;
+    --dark:#3B3B3B;
+    --secondary-white: #F5F5F5
+
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+p{
+  margin-bottom: 0;
+  font-size: 20px;
+  line-height: 1.6em;
+  font-weight: 400;
+}
+
 
 /* Smooth scroll */
 :root {
-    scroll-behavior: smooth;
-  }
-
+  scroll-behavior: smooth;
+}
+.shadow-1{
+  box-shadow: 5px 5px 22px #0000003D;
+}
 .header {
   color: var(--default-color);
   background-color: var(--background-color);
@@ -29,7 +45,7 @@
   z-index: 997;
 }
 .footer-bg {
-  background-color: var(--footer-color);
+  background-color: var(--red);
 }
 .footer {
   padding: 40px 0px;
@@ -55,7 +71,7 @@
   border-right: 0px solid white;
 }
 .px-line {
-  padding: 20px 10px 10px 25px;
+  padding: 30px 10px 40px 25px;
 }
 .line {
   border-bottom: 1px solid white;
@@ -68,8 +84,223 @@
   font-weight: 400;
   color: var(--global-white);
 }
-@media (min-width: 1880px){
+
+/* hero-section start */
+.hero-section {
+  padding: 120px 142px;
+  background-color: var(--primary-section-color);
+}
+.hero-section .widget{
+  max-width: 653px;
+}
+.hero-section .widget h1{
+  font-size: 68px;
+  line-height: 1.13em;
+  font-weight: 700;
+  color: var(--global-white);
+  margin-bottom: 74px;
+}
+.hero-section .widget hr{
+  width: 260px;
+  background-color: var(--red);
+  height: 11px;
+  opacity: 1;
+  margin-bottom: 74px;
+}
+.hero-section .text-widget{
+  max-width: 487px;
+}
+.hero-section .text-widget p{
+  color: var(--global-white);
+  margin-bottom: 30px;
+  font-weight: 400;
+}
+.sub-header-text-widget{
+  max-width: 487px;
+}
+.sub-header-text-widget h4{
+  margin-bottom: 16px;
+  font-weight: 700;
+  color: var(--global-white);
+}
+.sub-header-text-widget p{
+  font-weight: 400;
+  color: white;
+}
+
+/* hero-section end*/
+
+/* benefit-section start */
+.benefit-section{
+  padding: 177px 0 194px 0;
+}
+.benefit-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 961px;
+}
+.benefit-container .title-widget h2{
+ font-size: 48px;
+ line-height: 1.5em;
+ font-weight: 700;
+ color: var(--dark);
+ margin-bottom: 45px;
+}
+.benefit-container .title-widget{ 
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;  
+  overflow: hidden;
+  margin-bottom: 76px;
+}
+.benefit-card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.benefit-card .image{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.benefit-card .image img{
+  width: 138px;
+  height: 138px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.benefit-card .title h3{
+  font-size: 24px;
+  line-height: 1.29em;
+  font-weight: 700;
+  color: var(--dark);
+  margin-bottom: 26px;
+}
+.benefit-card .text p{
+  color: var(--dark);
+  text-align: center;
+}
+.benefit-card .text {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;  
+  overflow: hidden;
+}
+.learn-more .btn{
+  padding: 13px 68px;
+  background-color: var(--dark);
+  color: var(--global-white);
+  font-size: 20px;
+  line-height: 1.6em;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-top: 102px;
+  border: none;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+}
+.icp-widget p{
+  max-width: 536px;
+}
+.icp-widget h2{
+  font-size: 54px;
+  line-height: 1.3em;
+  font-weight: 700;
+  color: var(--dark);
+  margin-bottom: 56px;
+}
+.icp-widget .learn-more .btn{
+  background-color: #CC2027;
+}
+ 
+/* benefit-section end */
+
+/* ideal-icp-section start */
+.bg-lenear{
+  background: linear-gradient(164deg, rgba(204, 32, 39, 0) 0%, rgb(247 247 247 / 38%) 42%, rgba(204, 32, 39, 0.66) 67%, rgba(204, 32, 39, 1) 100%) no-repeat padding-box;
+}
+.ideal-icp-section{
+  background-color: var(--secondary-white);
+}
+.ideal-icp-section .img-widget{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: end;
+}
+.ideal-icp-section .img-widget img{
+  max-width: 100%;
+  height: 600px;
+}
+.ideal-icp-section .learn-more{
+  margin-bottom: 146px;
+}
+.ideal-icp-section .icp-widget{
+  margin-top: 146px;
+}
+.left-arrow{
+  position: absolute;
+  top: -50px;
+  left: 0;
+}
+.right-arrow{
+  position: absolute;
+  top: -275px;
+  right: 0;
+}
+.dots{
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+.footer-menu ul li a {
+  font-size: 20px;
+  line-height: 1.6em;
+  font-weight: 400;
+}
+.footer-list-menu ul li a{
+  font-size: 16px;
+  font-weight: 400;
+}
+.gap-25{
+  gap: 25px;
+}
+.fa-brands{
+  color: var(--global-white);
+  font-size: 25px;
+}
+.copyright-section{
+  margin-top: 30px;
+}
+/* ideal-icp-section end */
+
+
+
+@media (min-width: 1920px){
   .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
-    max-width: 1720px !important;
+    max-width: 1636px !important;
+  }
+  .ideal-icp.container-xl{
+    max-width: 1498px !important;
+  }
+}
+@media (max-width:1600px) {
+  .left-arrow img{
+    width: 90px;
+  }
+}
+@media (max-width:1200px) {
+  .left-arrow img{
+    display: none;
   }
 }
